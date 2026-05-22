@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    table,
+    td,
+    th,
+    tr {
+      border: 1px solid;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+
+    style I input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center; background-color: rgb(235, 113, 113);">Sports Physical Form</h1>
+  <form>
+    <fieldset>
+      <legend>Athlete Information</legend>
+      <ul>
+        <li>
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Enter Your Full Name" required />
+        </li>
+
+        <li>
+          <label for="school">School/Team Name: </label>
+          <input type="text" id="school" placeholder="Enter Your School/Team Name" value="Parul University" readonly />
+        </li>
+
+        <li>
+          <label for="sport">Sport: </label>
+          <input type="text" id="sport" placeholder="Enter sport name" required />
+        </li>
+
+        <li>
+          <label for="parent">Parent/Guardian Name: </label>
+          <input type="text" id="parent" placeholder="Enter full name" required />
+        </li>
+
+        <li>
+          <label for="contact">Contact: </label>
+          <input type="text" id="contact" placeholder="Enter contact no." required />
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Medical History for Athlete</legend>
+      <ul>
+        <li>
+          History of Concussions:
+          <input type="radio" name="concussions" id="concussions-yes" value="concussions-yes" required>
+          <label for="concussions-yes">Yes</label>
+          <input type="radio" name="concussions" id="concussions-no" value="concussions-no" required>
+          <label for="concussions-no">No</label>
+        </li>
+
+        <li>
+          <label for="parent">Previous Surgeries: </label>
+          <input type="text" id="parent" placeholder="Enter details here" required />
+        </li>
+
+        <li>
+          Any Bone fracture?
+          <input type="radio" name="fracture" id="fracture-yes" value="fracture-yes" required>
+          <label for="fracture-yes">Yes</label>
+          <input type="radio" name="fracture" id="fracture-no" value="fracture-no" required>
+          <label for="fracture-no">No</label>
+        </li>
+
+        <li>
+          Asthama or Breathing Problems?
+          <input type="radio" name="asthama" id="asthama-yes" value="asthama-yes" required>
+          <label for="asthama-yes">Yes</label>
+          <input type="radio" name="asthama" id="asthama-no" value="asthama-no" required>
+          <label for="asthama-no">No</label>
+        </li>
+      </ul>
+
+      <ul>
+
+    </fieldset>
+
+    <table>
+
+    </table>
+  </form>
+  <br>
+  <fieldset>
+    <legend>Date & Time</legend>
+    <ul>
+      <li>
+        <label for="dob"> DOB</label>
+        <input type="date" name="" id="dob" />
+      </li>
+      <li> I
+        <label for="time"> Time</label>
+        <input type="time" name="" id="time" />
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Textarea</legend>
+    <ul>
+      <li>
+
+        <p><label for="summary">Summary for last operation</label></p>
+        <textarea name="summary" id="summary" rows="2" cols="50"></textarea>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>
+      File Input
+    </legend>
+    <p><label for="medical-1"> Drop ur last medical report:</label></p>
+
+    <input type="file" name="medical-1" id="medical-1" accept=".pdf,.html">
+  </fieldset>
+  <fieldset>
+    <legend>Checkbox/Select/Number</legend>
+    <ul>
+      <li>
+        <!-- <input type="checknox" name="check" id="check2">
+            <label for="check2">Accept all terms</label> -->
+        <input type="checkbox" name="check" id="check" required value="yes-check">
+        <label for="check">
+          <p>U have read all terms </p>
+        </label>
+        <input type="checkbox" name="check1" id="check1" required value="yes-check1">
+        <label for="check1">
+          <p>U have read all cond</p>
+        </label>
+
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Select</legend>
+    <label for="states">Select ur state:</label>
+    <select name="states" id="states">
+      <option value="">Select state</option>
+      <option value="maharastra">Maharastra</option>
+      <option value="bihar">Bihar</option>
+      <option value="gujrat">Gujrat</option>
+      <option value="uttarpradesh">UttarPradesh</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>table</legend>
+    <table>
+      <thead>
+        <tr>
+          <th>Emp Code</th>
+          <th>Emp name</th>
+          <th>Job title</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>911</td>
+          <td>Zoya Shaikh</td>
+          <td>Developer</td>
+          <td>3.6</td>
+        </tr>
+        <tr>
+          <td>912</td>
+          <td> Shaikh</td>
+          <td>Developer</td>
+          <td>5.6</td>
+        </tr>
+        <tr>
+          <td>913</td>
+          <td>Shetty</td>
+          <td>AI/ML</td>
+          <td>11.6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+    </table>
+  </fieldset>
+  <fieldset>
+  <legend>Time Table </legend>
+
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>8:00-8:30am</th>
+      <th>8:30-9:30am</th>
+      <th>9:30-10:30am</th>
+      <th>10:30-11:00am</th>
+      <th>11:00-12:00pm</th>
+      <th>12:00-1:00pm</th>
+    </tr>
+
+    <tr>
+      <td>Monday</td>
+      <td rowspan="6" style="text-align: center;">Assembly</td>
+      <td>Maths</td>
+      <td>Social Science</td>
+      <td rowspan="6" style="text-align: center;">Break</td>
+      <td>Computer</td>
+      <td>English</td>
+    </tr>
+
+    <tr>
+      <td>Tuesday</td>
+      <td>Science</td>
+      <td>Hindi</td>
+      <td>Maths</td>
+      <td>English</td>
+    </tr>
+
+    <tr>
+      <td>Wednesday</td>
+      <td>Maths</td>
+      <td>Creative Arts</td>
+      <td>Computer</td>
+      <td>Social Science</td>
+    </tr>
+
+    <tr>
+      <td>Thursday</td>
+      <td>Maths</td>
+      <td>Science</td>
+      <td>Computer</td>
+      <td>Hindi</td>
+    </tr>
+
+    <tr>
+      <td>Friday</td>
+      <td>Maths</td>
+      <td>English</td>
+      <td>Creative Arts</td>
+      <td>Social Science</td>
+    </tr>
+
+    <tr>
+      <td>Saturday</td>
+      <td>Social Science</td>
+      <td>Hindi</td>
+      <td>Maths</td>
+      <td>Science</td>
+    </tr>
+
+    <tr>
+      <td colspan="7" style="text-align: center;">
+        This timetable will be effective from : 19/05/2026
+      </td>
+    </tr>
+  </table>
+</fieldset>
+  <a href="action-page.html">
+    <button type="submit">Submit</button>
+  </a>
+  <button type="reset">Reset</button>
+</body>
+
+</html>
