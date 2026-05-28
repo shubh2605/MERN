@@ -1,0 +1,102 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400; 500; 600&display=swap');
+
+        * {
+            font-family: 'poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            /* background-color: #4070f4; */
+            padding: 3px;
+            box-shadow: 0 5px 10px rgb(0,0,0.1,0.5);
+
+        }
+
+        .image .profile-image {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:#fff;
+        }
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 350px;
+            width: 100%;
+            background-color: #fffefe;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+        }
+        .profile-card .text-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text-data{
+            padding:7px;
+        }
+        .text-data .name{
+            font-size: 22px;
+            font-weight:500;
+            
+        }
+        .text-data .tech{
+            font-size: 15px;
+            font-weight:400;
+        }
+        .platform{
+            height: 22px;
+            display: flex;
+            margin: 10px;
+        }
+        .social-media{
+            display: flex;
+        }
+        .social{
+            max-width: 50px;
+            width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 5px 10px rgb(0, 0, 0.1,0.2);
+            margin: 10px;
+        }
+        .contact-info{
+            display: flex;
+        }
+        .contact {
+            border-radius: 8px;
+             box-shadow: 0 5px 10px rgb(0, 0, 0.1,0.2);
+             padding: 10px;
+            margin: 20px;
+            text-decoration: none;
+            color:rgb(64, 63, 63);
+            
+        }
+        .reach{
+            display: flex;
+            padding: 0px;
+        }
+        .social-reach{
+             border-radius: 15px;
+             box-shadow: 0 5px 10px rgb(0, 0, 0.1,0.1);
+             padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color:rgb(64, 63, 63);
+        }

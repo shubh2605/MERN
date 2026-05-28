@@ -1,0 +1,180 @@
+What is Git and Why Do We Need Version Control
+
+When people work on software, documents, websites, or any project files,
+problems quickly appear:
+
+
+
+1. It becomes hard to track who changed what
+2. Older versions(work) are lost
+3. Collaboration becomes confusing
+4. Recovering from mistakes is difficult
+
+
+
+#How to tackle those challenges:
+This is why Version Control Systems (VCS) were created.
+
+#Version control system:
+A Version Control System is a tool that:
+
+Tracks file changes over time
+Stores history of modifications
+Allows multiple people to collaborate
+Helps recover previous versions
+
+
+------------------------------------------
+Difference Between Git and GitHub
+
+#Git:
+Git is a free and open-source version control tool created by Linus Torvalds.
+It works locally on your computer and helps developers:
+
+Track code changes
+Create branches
+Merge code
+Revert mistakes
+Maintain project history
+
+
+#Github:
+GitHub is a cloud-based platform that hosts Git repositories online.
+
+Features:
+1. Remote repository storage
+2. Team collaboration
+3. Push/Pull requests
+4. Code review
+5. CI/CD integration (Github Actions)
+
+
+Git as a 'Decentralized Version Control System' (DVCS) means every developer has a complete copy of the project and its history on their own computer.
+
+Unlike a centralized system where one main server stores everything, Git lets each user work independently.
+
+Simple idea
+
+Centralized Version Control  System (CVCS)
+
+Server
+   |
+   |---- Developer A
+   |---- Developer B
+   |---- Developer C
+
+Download Links:
+Git: https://git-scm.com/install/
+Github: https://github.com/
+
+
+======================IMPORTANT COMMANDS===================
+
+
+1. Configuring User Details: git config (name and email)
+
+git config --global user.name "developer"
+git config --global user.email "developer@example.com"
+
+
+
+2. Git Repo Initialization
+
+On folder level
+git init
+
+3. Adding file/folder to staging area
+Adds files to the staging area (prepares them for a commit).
+
+git add index.html
+OR
+git add .
+
+
+4.Save Changes to VCS
+-m means message
+
+git commit -m "message"
+
+
+
+5. Remove / Delete untracked files
+
+a. git clean -n  : To check preview which files can be removed
+b. git clean -f : for files
+c. git clean -fd : for files and folders
+
+
+6.Clone repositories from github
+Downloads an entire repository from a remote source.
+
+git clone https://github.com/user/project.git
+
+
+7.git fetch
+Gets new updates from a remote repository WITHOUT merging them
+
+8. git pull
+Downloads changes AND merges them into your current branch
+
+
+9. git push
+git push is used to upload your local code changes from your computer to a remote repository like GitHub.
+
+
+10. Git branch
+
+[a] .To list : git branch
+
+[b]. create new branch: git branch login-feature
+
+[c]. To checkout : git checkout login-feature
+
+[d]. create and switch: git switch -c login-feature OR git checkout -b login-feature
+
+[e] . add and commit to branch:
+git add .
+git commit -m "Created login page"
+
+[f]. Merge into Main :
+
+step 1.  git checkout main
+step 2:  git merge login-feature
+
+
+[g].  Delete Branch :
+git branch -d login-feature
+
+
+[h]. To remove Git tracking from a project
+
+rm -rf .git
+
+
+11. Tagging
+Tags in Git are used to mark specific points in a repository's history,
+often used for marking --release-- points like v1.0, v2.0, etc
+
+a. git tag tag_name (Eg. v1,v2)
+b. git tag tag_name commitHash
+c. git tag tag_name -a "message" commitHash
+d. git tag :  To lists down all Tags
+e. git push origin v1.0 : to push one tag
+f. git push origin --tags :  TO push all tags
+g. git tag -d v1 : To delete tag
+
+
+12. Git Restore
+ git rm --cached flow.png : to unstage the changes
+
+b. git restore . : to unstage all the changes
+
+
+13. Git Reset : Used to move the current branch pointer (HEAD)
+git reset --hard
+
+
+14. Logs : to log commit history
+
+git log
+git log -2
