@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}    
+header{
+    width:75%;
+    height: 15%;
+    background-color:#fffdfd;
+    margin: 0px auto;
+    align-items: center;
+}
+nav{
+    display: flex;
+}
+
+.head-icons{
+    display: flex;
+    
+}
+.items{
+    margin: 30px;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    
+}
+#flipkart{
+    background-color: rgb(255, 230, 0);
+    margin-right: 0px;
+}
+#travel{
+    background-color: rgb(244, 242, 242);
+}
+.select_address{
+    text-decoration: none;
+}
+.location{
+    margin: 35px;
+    padding-left: 400px;
+}

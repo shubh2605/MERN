@@ -43,6 +43,7 @@
             border-radius: 25px;
             padding: 25px;
             box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+            
         }
         .profile-card .text-data{
             display: flex;
@@ -99,4 +100,10 @@
             margin: 10px;
             text-decoration: none;
             color:rgb(64, 63, 63);
+        }
+        #message{
+            background-color: rgb(150, 206, 255);
+        }
+        #contact{
+            border:solid rgb(150, 206, 255) ;
         }
