@@ -9,15 +9,16 @@ html,
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #ffffff;
+    background-color: #fff;
 }    
-header{
-    width:75%;
-    height: 15%;
+header,main{
+    width: 85%;
     background-color:#fffdfd;
     margin: 0px auto;
     align-items: center;
+    
 }
+
 nav{
     display: flex;
 }
@@ -30,8 +31,8 @@ nav{
     margin: 30px;
     background-color: #ffffff;
     text-decoration: none;
-    padding: 10px 25px 10px 25px;
-    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 17px;
     color: black;
     border: none;
     
@@ -48,5 +49,40 @@ nav{
 }
 .location{
     margin: 35px;
-    padding-left: 400px;
+    padding-left: 600px;
+}
+.search{
+    display: flex; 
+    justify-content: flex-start; 
+    margin-left: 50px;
+    padding-bottom: 14px;
+    padding-top: 0%;
+    
+}
+.login{
+    padding-left: 10px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+.icon-box{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #2874f0;
+    padding: 20px 15px;
+    min-width:80px;
+    text-align: center;
+    border-radius: 5px;
+}
+.cat-nav{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    gap: 5px;
+}
+.image{
+    height:50%;
+    width:50%;
 }
