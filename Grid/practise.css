@@ -1,0 +1,59 @@
+
+#div-container{
+    
+    background-color: antiquewhite;
+    height: 100%;
+    width: 500px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 3fr 6fr 6fr 1fr;
+}
+.grid-item-1{
+    background-color: aqua;
+    grid-column: 1/4;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-2{
+    background-color: rgb(106, 206, 110);
+    grid-row: 2/4;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-3{
+    background-color: rgb(49, 172, 255);
+    grid-column: 2/4;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-4{
+    background-color: rgb(170, 103, 242);
+    grid-column:2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-5{
+    background-color: rgb(170, 103, 242);
+    grid-column:3;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-6{
+    background-color: rgb(170, 103, 242);
+    grid-column:1/4;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

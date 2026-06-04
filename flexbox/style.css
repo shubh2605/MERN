@@ -151,9 +151,9 @@ footer{
 }
 
 .heading{
-    color:#787676;
+    color:#878787;
     font-size:14px;
-    
+    margin-bottom:15px;
 }
 
 #footer-top li{
@@ -168,13 +168,16 @@ footer{
 }
 
 
-
 hr{
     border:none;
     border-top:1px solid #3f3f3f;
     margin:25px 0;
 }
 
-
-
+#footer-bottom{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
 
