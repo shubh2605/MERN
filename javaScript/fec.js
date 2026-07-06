@@ -7,7 +7,7 @@ console.log(globalVariable);
 console.log(greet());
 greet();
 
-console.log('Global Execution Context End');
+console.log('Global Execution Context End!');
 
 // Function Declaration
 function greet() {
