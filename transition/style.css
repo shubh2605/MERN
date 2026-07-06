@@ -1,0 +1,91 @@
+.main{
+    height: 400px;
+    width: 150px;
+    border: solid black 2px;
+
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.light{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+#light1{
+    background:red;
+    animation:redLight 3s infinite;
+}
+
+#light2{
+    background:yellow;
+    animation:yellowLight 3s infinite;
+}
+
+#light3{
+    background:green;
+    animation:greenLight 3s infinite;
+}
+
+@keyframes redLight{
+    0%,30%{opacity:1;}
+    31%,100%{opacity:0.3;}
+}
+
+@keyframes yellowLight{
+    0%,30%{opacity:0.3;}
+    31%,60%{opacity:1;}
+    61%,100%{opacity:0.3;}
+}
+
+@keyframes greenLight{
+    0%,60%{opacity:0.3;}
+    61%,100%{opacity:1;}
+}
+
+
+.rough{
+    /* height: 200px;
+    width: 100px;
+    background-color: red; */
+    /* transition */
+
+    /* short hand property
+    transition: all 0.5s 0s ease-in; */
+
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s; */
+
+    /* animation */
+    /* animation-name: pop-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border: none; */
+}
+
+/* 
+.rough:hover{
+    background-color:rgb(103, 171, 249);
+    width: 450px;
+    height: 200px;
+    border-radius:  0px 50px 0px 0px;
+} */
+#button{
+    height: 40px;
+    width: 80px;
+    background-color: #afaeae;
+    color: black;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+#button:hover{
+    background-color: #484747;
+    color: white;
+    transform: scale(6);
+    filter: ;
+}
