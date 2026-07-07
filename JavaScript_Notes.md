@@ -171,7 +171,7 @@ JavaScript mein term "first-class" (ya first-class citizen) iska matlab hai ki f
 
 - **Function Declarations:** Ye functions define karne ka sabse common tarika hai JavaScript mein. Ye `function` keyword use karte hain aur inke scope ke top pe hoist ho sakte hain, jisse inhe define hone se pehle bhi call kiya ja sakta hai.
 - **Function Expressions:** Ye anonymous functions hote hain jo ek variable mein assign kiye jaate hain. Inka koi naam nahi hota aur ye sirf assign hone ke baad hi call ho sakte hain.
-- **Arrow Functions:** ES6 mein introduce huye, arrow functions `=>` syntax use karte hain aur hamesha expressions hote hain. Agar function body sirf ek statement contain karti hai, to ye `return` keyword aur curly brackets omit kar sakte hain.
+- **Arrow Functions:** Agar function body sirf ek statement contain karti hai, to ye `return` keyword aur curly brackets skip kar sakte hain.
 
 ### Default, Rest, Aur Spread Parameter
 
@@ -205,3 +205,37 @@ function add(a, b) {
 ```
 
 **Impure Function:** Impure functions same input ke liye different outputs produce kar sakte hain aur external state ko modify kar sakte hain.
+
+Example:
+```js
+let total = 0;
+function addToTotal (x) {
+total += x; // modifies external state
+return total;
+}
+```
+
+### Factory Function in JavaScript
+A factory function is a function that returns a new object each time it is called. factory functions makes easier to manage multiple objects with similar properties and behaviors.
+
+### What is a Constructor Function?
+A constructor function is a special type of function in JavaScript that's used to create and initialize new objects. constructor functions are designed to set up an object's initial state. They define the properties (data) and methods (behaviors) that each instance of the object will have.
+
+### Key Characteristics of Constructor Functions
+1. **Naming Convention** : By convention, constructor functions are named with a capital letter. This helps differentiate them from regular functions.
+2. **Usage of this Keyword**: Constructor functions use the this keyword to refer to the new object instance being created.
+3. **new Keyword**: Constructor functions are called with the new keyword. This creates a new, empty object, and this inside the function will refer to that object.
+
+### Generator Function
+A generator function is defined using the function syntax and allows execution to be paused and resumed. **Unlike regular functions that return a single value**, generator functions return a generator object, which is an iterator conforming to the iterable protocol.
+```js
+function simpleGenerator() {
+vield 'Hello';
+vield 'World';
+}
+
+const iterator = simpleGenerator();
+console.log(iterator.next().value); 
+console.log(iterator.next().value); 
+console.log(iterator.next().done); 
+```
