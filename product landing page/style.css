@@ -1,0 +1,447 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.2% 10%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.links {
+  font-size: 14px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+#company_name {
+  font-size: 24px;
+}
+#signing {
+  background-color: rgb(54, 160, 236);
+  padding: 8px;
+  color: white;
+}
+
+/* ===== HERO HEADER ===== */
+#header {
+  background-color: rgb(94, 186, 247);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  padding: 5% 10%;
+}
+#text1, #text2, #text3 {
+  margin: 0 0 0;
+}
+#text1 {
+  font-size: 4em;
+}
+#text2 {
+  font-size: 1.5em;
+}
+#text3 {
+  background-color: rgb(59, 59, 59);
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+/* ===== SHARED SECTION INTROS (OUR SERVICES / OUR PRODUCTS / OUR PRICING) ===== */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin: 15px;
+}
+.intro_title {
+  margin: 0;
+}
+.intro_text {
+  max-width: 500px;
+  color: grey;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ===== SERVICES ICON GRID ===== */
+#main2 {
+  height: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 220px;
+  padding: 30px 20px;
+}
+#section1 { background-color: grey; }
+#section2 { background-color: rgb(203, 203, 203); }
+#section3 { background-color: rgb(35, 157, 245); }
+#section4 { background-color: rgb(76, 180, 255); }
+
+.material-symbols-outlined {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* ===== PRODUCTS IMAGE GRID ===== */
+#main3 {
+  height: auto;
+  margin: 0 12% 5% 12%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.img {
+  aspect-ratio: 16/9;
+  flex: 1 1 280px;
+  background-size: cover;
+  background-position: center;
+  margin: 2px;
+}
+#img1 { background-image: url(image.png); }
+#img2 { background-image: url(image2.png); }
+#img3 { background-image: url(image3.png); }
+#img4 { background-image: url(image4.png); }
+#img5 { background-image: url(image5.png); }
+#img6 { background-image: url(image6.png); }
+
+/* ===== LEARN MORE (was index.html #footer) ===== */
+#footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+}
+#next_page {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(54, 160, 236);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  padding: 10px 12px;
+}
+
+#ending {
+  background-color: rgb(44, 58, 80);
+  border: 2px solid black;
+  height: 40px;
+}
+
+/* ===== FUNNY FACTS ===== */
+#funfacts {
+  display: flex;
+  background-color: rgb(30, 56, 92);
+  flex-wrap: wrap;
+  padding: 3% 10%;
+  justify-content: space-around;
+  color: rgb(223, 221, 221);
+  line-height: 1.5;
+}
+#facts {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+}
+.fa-mug-hot {
+  display: inline;
+  font-size: 2rem;
+  vertical-align: middle;
+  padding-bottom: 15%;
+}
+.data {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 0;
+}
+.number {
+  font-size: 40px;
+  margin: 0;
+  display: inline;
+  margin-right: 10px;
+}
+.data .material-symbols-outlined {
+  font-size: 2rem;
+}
+
+/* ===== PRICING (was index2.html #main2) ===== */
+#pricing {
+  width: 75%;
+  margin-left: 13.5%;
+  max-height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  color: grey;
+}
+.section1 {
+  height: 550px;
+  width: 33.333%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content1 {
+  height: 15%;
+  width: 90%;
+  background-color: rgb(237, 236, 236);
+  text-align: center;
+  font-size: 22px;
+}
+.content2 {
+  height: 35%;
+  width: 90%;
+  background-color: rgb(189, 189, 189);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.content3 {
+  height: 45%;
+  width: 90%;
+  background-color: rgb(214, 212, 212);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.section1:hover > .content1 {
+  background-color: rgb(30, 56, 92);
+  box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.4);
+  color: rgb(213, 212, 212);
+}
+.section1:hover > .content2 {
+  background-color: rgb(6, 127, 192);
+  box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.4);
+  color: rgb(213, 212, 212);
+}
+.section1:hover > .content3 {
+  background-color: rgb(30, 56, 92);
+  box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.4);
+  color: rgb(213, 212, 212);
+}
+.dollar {
+  display: inline;
+}
+.content2 .number {
+  display: inline;
+  font-size: 3em;
+}
+.info {
+  margin-top: 30px;
+  width: 70%;
+  text-align: center;
+}
+.buy {
+  text-decoration: none;
+  color: grey;
+  border: 2px solid gray;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1:hover > .content3 > .buy {
+  background-color: rgb(6, 127, 192);
+  color: rgb(213, 212, 212);
+  border-color: rgb(0, 166, 255);
+}
+
+/* ===== CONTACT / MAP (was index2.html #main3) ===== */
+#contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  margin-top: 50px;
+}
+.footer {
+  height: 100%;
+  width: 50%;
+}
+#footer1 {
+  background-image: url(image9.png);
+  background-size: cover;
+}
+#footer2 {
+  background-color: rgb(6, 127, 192);
+  color: rgb(213, 212, 212);
+}
+#contact {
+  padding: 15% 0 0 15%;
+  font-size: 1.5rem;
+}
+#more_info {
+  padding: 5% 10% 15% 15%;
+}
+
+/* ===== FINAL CTA FOOTER (was index2.html #footer) ===== */
+#footer {
+  height: 90px;
+  background-color: rgb(30, 56, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+#buy {
+  text-decoration: none;
+  background-color: rgb(6, 127, 192);
+  color: rgb(30, 56, 92);
+  height: 50%;
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== MOBILE LAYOUT ===== */
+@media (max-width: 700px) {
+  #navbar {
+    padding: 10px 16px;
+    justify-content: center;
+  }
+
+  #company_name {
+    margin: 6px 0;
+  }
+
+  #navbar > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .links {
+    margin: 6px;
+    font-size: 12px;
+  }
+
+  #header {
+    min-height: 220px;
+    padding: 12% 8%;
+  }
+
+  #text1 {
+    font-size: clamp(2.4rem, 12vw, 4rem);
+    line-height: 1.05;
+  }
+
+  #text2 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  .intro {
+    height: auto;
+    margin: 42px 20px 24px;
+  }
+
+  .intro_text {
+    margin-bottom: 0;
+  }
+
+  #main2 {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 28px 24px;
+  }
+
+  #main3 {
+    margin: 0 16px 42px;
+    gap: 8px;
+  }
+
+  .img {
+    flex-basis: 100%;
+  }
+
+  #funfacts {
+    padding: 36px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .data {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  #pricing {
+    width: auto;
+    max-height: none;
+    margin: 0 16px;
+    justify-content: center;
+  }
+
+  .section1 {
+    width: 100%;
+    max-width: 380px;
+    min-width: 0;
+    height: 500px;
+  }
+
+  #contact-section {
+    height: auto;
+    margin-top: 42px;
+    flex-direction: column;
+  }
+
+  .footer {
+    width: 100%;
+    height: 300px;
+  }
+
+  #footer2 {
+    height: auto;
+    min-height: 300px;
+  }
+
+  #contact {
+    padding: 42px 24px 0;
+  }
+
+  #more_info {
+    padding: 24px;
+  }
+
+  #footer {
+    height: 110px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  #buy {
+    width: min(100%, 320px);
+    height: 52px;
+  }
+}
