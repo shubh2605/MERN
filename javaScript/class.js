@@ -45,7 +45,7 @@ class Bank {
       // console.log(InsufficientFundEmail.call(this, amount));
     } else {
       this.balance -= amount;
-      // sendWithdrawEmail.call(this, amount);
+      sendEmail.call(this, amount,this.__accountHolderName);
     }
   }
   getPercentage() {
@@ -74,5 +74,17 @@ class Bank {
   }
 }
 
+function sendEmail(account, amount){
+  let template = `
+To : ${account.accountHolderName},
+
+This is to inform you that amount of ${amount}
+is withdrawn.
+`;
+  console.log(template);
+}
+
 let obj1 = new Bank('Raj', '5959561000', 'raj45@gmail.com', 522000);
 console.log(Bank.getBankCode());
+console.log();
+sendEmail(obj1,1000);

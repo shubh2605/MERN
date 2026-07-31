@@ -1,0 +1,1 @@
+sendWithdrawEmail.call(this, amount);

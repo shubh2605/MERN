@@ -15,7 +15,7 @@ function createBankAccount(accountHolder, mobile, email, bal) {
         if(amount <= balance){
             balance -= amount;
             console.log(`Withdrawn: ${amount}. New Balance: ${balance}`);
-            sendEmail(this, amount);
+            sendEmail(this,amount);
         } else {
             console.log("Insufficient balance!");
         }
